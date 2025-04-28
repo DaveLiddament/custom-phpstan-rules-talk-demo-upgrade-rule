@@ -1,0 +1,43 @@
+{
+    "name": "dave-liddament/custom-phpstan-rules-talk-upgrade-rule",
+    "description": "Demo PHPStan custom rule to show how they can be used to help with upgrades",
+    "type": "phpstan-extension",
+    "require": {
+        "phpstan/phpstan": "^2.1",
+        "dave-liddament/custom-phpstan-rules-talk-demo-library": "^1.1.0"
+    },
+    "require-dev": {
+        "dave-liddament/phpstan-rule-test-helper": "^0.5.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DaveLiddament\\CustomPhpstanRulesTalkUpgradeRule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DaveLiddament\\CustomPhpstanRulesTalkUpgradeRule\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dave Liddament",
+            "email": "dave@lampbristol.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DaveLiddament/custom-phpstan-rules-talk-demo-library"
+        }
+    ],
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    }
+}

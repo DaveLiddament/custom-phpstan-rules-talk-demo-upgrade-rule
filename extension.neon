@@ -1,0 +1,5 @@
+services:
+    -
+        class: DaveLiddament\CustomPhpstanRulesTalkUpgradeRule\Rules\AlertServiceAlertUpgradeRule
+        tags:
+            - phpstan.rules.rule
